@@ -15,4 +15,5 @@ RUN npm install
 COPY . /usr/src/app
 
 EXPOSE 30000
+
 CMD [ "npm", "start" ]
