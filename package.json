@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "",
-    "start" : "pm2 start app.js -n test-jenkins"
+    "start" : "pm2 delete test-jenkins; pm2 start app.js -n test-jenkins"
   },
   "repository": {
     "type": "git",
