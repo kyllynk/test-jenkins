@@ -1,7 +1,7 @@
 FROM node:7.7.2
 
 #Install PM2
-RUN npm íntall -g pm2
+RUN npm install -g pm2
 
 #Create working directory
 RUN mkdir -p /usr/src/app
