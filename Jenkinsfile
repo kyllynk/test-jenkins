@@ -1,10 +1,8 @@
-pipeline {
-    agent { docker 'node:6.3' }
-    stages {
-        stage('build') {
-            steps {
-                sh 'npm --version'
-            }
+node('vultr-pro') {
+    checkout scm
+    stage('Build') {
+        docker.image('node:6.3').inside {
+            sh 'npm --version'
         }
     }
 }
