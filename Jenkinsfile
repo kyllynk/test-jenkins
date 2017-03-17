@@ -1,8 +1,7 @@
 node('vultr-pro') {
     checkout scm
     stage('Build') {
-        docker.image('node:6.3').inside {
-            sh 'npm --version'
-        }
+        def dockerImg = docker.build 'test-jenkins:${env.BUILD_TAG}'
+				dockerImg.run('-p 30000:30000')
     }
 }
