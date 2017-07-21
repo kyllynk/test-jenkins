@@ -116,9 +116,9 @@ Bước này được thực hiện trên tất cả các nodes trong cluster.
 
 	* Copy ssh key của **slaves** cho **master**(run on master)
 		```
-		ssh-copy-ip hadoop-slave1 -> nhập password cho tài khoản hadoop trên hadoop-slave1
-		ssh-copy-ip hadoop-slave2 -> nhập password cho tài khoản hadoop trên hadoop-slave2
-		ssh-copy-ip hadoop-slave3 -> nhập password cho tài khoản hadoop trên hadoop-slave3
+		ssh-copy-ip hadoop-slave1 -> nhập password cho tài khoản hadoop trên hadoop-slave1
+		ssh-copy-ip hadoop-slave2 -> nhập password cho tài khoản hadoop trên hadoop-slave2
+		ssh-copy-ip hadoop-slave3 -> nhập password cho tài khoản hadoop trên hadoop-slave3
 		```
 
 5. [Cấu hình chung Hadoop trên cả **master** và **slaves**](http://)  
